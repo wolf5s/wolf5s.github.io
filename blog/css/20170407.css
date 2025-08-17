@@ -1,0 +1,68 @@
+#content{
+	width: 1000px;
+	height: auto;
+	background-color: rgba(255,255,255,0.3);
+	margin-bottom:10px;
+}
+
+#content .content{
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+
+#demo {
+	display: block;
+	width: 400px;
+	height: 255px;
+	left: 50px;
+	top: 50px;
+	position: absolute;
+	border: 1px solid #ccc;
+}
+
+#small-box {
+	position: absolute;
+	z-index: 1;
+}
+
+#float-box {
+	display: none;
+	width: 160px;
+	height: 120px;
+	position: absolute;
+	background: #ffffcc;
+	border: 1px solid #ccc;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	cursor: move;
+}
+
+#mark {
+	position: absolute;
+	display: block;
+	width: 400px;
+	height: 255px;
+	z-index: 10;
+	background: #fff;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	cursor: move;
+}
+
+#big-box {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 460px;
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	z-index: 1;
+}
+
+#big-box img {
+	position: absolute;
+	z-index: 5
+}

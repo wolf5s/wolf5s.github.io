@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft Yahei'; }
+  * ul {
+    list-style: none; }
+  * a, * a:link, * a:visited, * a:hover, * a:active {
+    text-decoration: none;
+    color: #fff; }
+
+body {
+  background: #fff url(image/empty.png) 0 0 repeat;
+  background-size: 100%; }
+  @media only screen and (max-width: 800px) {
+    body {
+      background: #fff url(image/empty.png) 0 0 repeat fixed;
+      background-size: 100%; } }
+
+#main {
+  position: absolute;
+  border-radius: 40px;
+  box-shadow: 0 0 8px #666;
+  flex-flow: row; }
+  #main.rotate-show {
+    -webkit-animation: rotate-show .5s .5s linear;
+    animation: rotate-show .5s .5s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  #main.rotate-show-once {
+    transform: rotateY(0); }
+@-webkit-keyframes rotate-show {
+  from {
+    -webkit-transform: rotateY(270deg);
+    transform: rotateY(270deg); }
+  to {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+@keyframes rotate-show {
+  from {
+    -webkit-transform: rotateY(270deg);
+    transform: rotateY(270deg); }
+  to {
+    display: flex;
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+  #main .left {
+    width: 300px;
+    border-radius: 40px 0 0 40px;
+    background-color: rgba(17, 34, 51, 0.75); }
+    #main .left .avatar {
+      position: relative;
+      margin: 50px auto 20px;
+      width: 80px;
+      height: 80px; }
+      @media only screen and (max-width: 800px) {
+        #main .left .avatar {
+          margin: 50px auto 40px; } }
+      #main .left .avatar .image-border {
+        position: absolute;
+        left: 50%;
+        margin: -5px 0 0 -40px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #fff; }
+      #main .left .avatar .image {
+        position: absolute;
+        left: 50%;
+        margin-left: -35px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #fff url("image/empty.png") 0 0 no-repeat;
+        background-size: 100%; }
+    #main .left .own {
+      margin-top: 40px;
+      border-top: 5px solid #ccc;
+      overflow-y: scroll; }
+      #main .left .own::-webkit-scrollbar {
+        position: absolute;
+        width: 10px; }
+      #main .left .own::-webkit-scrollbar-thumb {
+        height: 20px;
+        border-radius: 10px;
+        background-color: rgba(17, 34, 51, 0.75); }
+        #main .left .own::-webkit-scrollbar-thumb:hover {
+          background-color: rgba(17, 34, 51, 0.9); }
+      #main .left .own li {
+        display: inline-block;
+        color: #fff;
+        line-height: 60px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 24px; }
+        #main .left .own li a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+        #main .left .own li:nth-child(odd) {
+          background-color: rgba(255, 255, 255, 0.3); }
+        #main .left .own li:hover {
+          background-color: rgba(255, 255, 255, 0.6); }
+          #main .left .own li:hover i, #main .left .own li:hover a {
+            color: #123; }
+        #main .left .own li i {
+          margin: 0 25px 0 40px; }
+    #main .left .link {
+      margin-top: 40px;
+      border-top: 5px solid #ccc;
+      position: absolute;
+      width: 300px;
+      bottom: 0; }
+      #main .left .link:last-child {
+        border-bottom-left-radius: 40px; }
+      #main .left .link::before {
+        content: '-link-';
+        position: absolute;
+        font-size: 16px;
+        color: #ccc;
+        top: -28px;
+        left: 20px; }
+      #main .left .link li:last-child {
+        border-bottom-left-radius: 40px; }
+      #main .left .link li {
+        display: inline-block;
+        color: #fff;
+        line-height: 60px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 24px; }
+        #main .left .link li a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+        #main .left .link li:nth-child(odd) {
+          background-color: rgba(255, 255, 255, 0.3); }
+        #main .left .link li:hover {
+          background-color: rgba(255, 255, 255, 0.6); }
+          #main .left .link li:hover i, #main .left .link li:hover a {
+            color: #123; }
+        #main .left .link li i {
+          margin: 0 25px 0 40px; }
+  #main .right {
+    flex: 1;
+    border-radius: 0 40px 40px 0;
+    background-color: rgba(243, 245, 247, 0.6);
+    padding: 30px 50px;
+    overflow-y: scroll; }
+    #main .right::-webkit-scrollbar {
+      position: absolute;
+      width: 10px; }
+    #main .right::-webkit-scrollbar-thumb {
+      height: 20px;
+      border-radius: 10px;
+      background-color: rgba(17, 34, 51, 0.75); }
+      #main .right::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(17, 34, 51, 0.9); }
+  @media only screen and (max-width: 800px) {
+    #main {
+      position: absolute;
+      width: 100%;
+      top: 0; }
+      #main .left {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        padding-top: 50px;
+        max-width: 800px;
+        margin-right: 0; }
+        #main .left .avatar {
+          position: relative;
+          margin: 0 auto 20px;
+          width: 60px;
+          height: 60px; } }
+      @media only screen and (max-width: 800px) and (max-width: 800px) {
+        #main .left .avatar {
+          margin: 0 auto 40px; } }
+  @media only screen and (max-width: 800px) {
+          #main .left .avatar .image-border {
+            position: absolute;
+            left: 50%;
+            margin: -5px 0 0 -30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #fff; }
+          #main .left .avatar .image {
+            position: absolute;
+            left: 50%;
+            margin-left: -25px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #fff url("image/empty.png") 0 0 no-repeat;
+            background-size: 100%; }
+        #main .left .own {
+          margin-top: 40px;
+          border-top: 5px solid #ccc;
+          overflow: visible; }
+          #main .left .own li {
+            display: inline-block;
+            color: #fff;
+            line-height: 60px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 24px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px; }
+            #main .left .own li a {
+              display: block;
+              width: 100%;
+              height: 100%; }
+            #main .left .own li:nth-child(odd) {
+              background-color: rgba(255, 255, 255, 0.3); }
+            #main .left .own li:hover {
+              background-color: rgba(255, 255, 255, 0.6); }
+              #main .left .own li:hover i, #main .left .own li:hover a {
+                color: #123; }
+            #main .left .own li i {
+              margin: 0 25px 0 40px; }
+            #main .left .own li i {
+              margin: 0 30px 0 40px; }
+        #main .left .link {
+          margin-top: 40px;
+          border-top: 5px solid #ccc;
+          display: none;
+          position: absolute;
+          width: 300px;
+          bottom: 0; }
+          #main .left .link:last-child {
+            border-bottom-left-radius: 40px; }
+          #main .left .link::before {
+            content: '-link-';
+            position: absolute;
+            font-size: 16px;
+            color: #ccc;
+            top: -28px;
+            left: 20px; }
+          #main .left .link li:last-child {
+            border-bottom-left-radius: 40px; }
+          #main .left .link li {
+            display: inline-block;
+            color: #fff;
+            line-height: 60px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 24px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px; }
+            #main .left .link li a {
+              display: block;
+              width: 100%;
+              height: 100%; }
+            #main .left .link li:nth-child(odd) {
+              background-color: rgba(255, 255, 255, 0.3); }
+            #main .left .link li:hover {
+              background-color: rgba(255, 255, 255, 0.6); }
+              #main .left .link li:hover i, #main .left .link li:hover a {
+                color: #123; }
+            #main .left .link li i {
+              margin: 0 25px 0 40px; }
+            #main .left .link li i {
+              margin: 0 30px 0 40px; }
+      #main .right {
+        border-radius: 0 0 20px 20px;
+        padding: 40px 20px; } }
+
+.icp-wrap {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+.icp-wrap .icp {
+  text-align: center;
+}
+
+.icp-wrap .icp a {
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.icp-wrap .icp a:hover {
+  color: #00f;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=public.css.map */

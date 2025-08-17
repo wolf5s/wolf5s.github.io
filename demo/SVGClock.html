@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>SVG钟表</title>
+  <link rel="stylesheet" type="text/css" href="../public.css" />
+  <link rel="stylesheet" type="text/css" href="../publicDemo.css" />
+  <link rel="stylesheet" type="text/css" href="../css/SVGClock.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" />
+</head>
+<body>
+  <div id="main">
+    <div class="left">
+      <div class="avatar">
+        <div class="image-border"></div>
+        <div class="image"></div>
+      </div>
+      <ul class="own">
+        <li><a href="digitaClock.html">canvas数码时钟</a></li>
+        <li><a href="rotateCube.html">CSS3旋转方块</a></li>
+        <li><a href="flappyBird.html">flappyBird</a></li>
+        <li><a href="gobang.html">五子棋</a></li>
+        <li><a href="tetris.html">俄罗斯方块</a></li>
+        <li><a href="canvasClock.html">canvas钟表</a></li>
+        <li><a href="retroSnaker.html">贪吃蛇</a></li>
+        <li><a href="mineSweeper.html">扫雷</a></li>
+        <li><a href="linkUp.html">数字连连看</a></li>
+        <li><a href="2048.html">2048</a></li>
+        <li><a href="elevatorSimulation.html">模拟电梯运行</a></li>
+        <li class="choose"><a href="#">SVG钟表</a></li>
+        <li><a href="colorCard.html">色卡</a></li>
+        <li><a href="lotterySimulation.html">彩票模拟选号</a></li>
+        <li><a href="perpetualCalendar.html">万年历</a></li>
+        <li><a href="pictureClipping.html">图片剪裁与缩略图</a></li>
+      </ul>
+      <ul class="link">
+        <li><a href="http://blog.sina.com.cn/5wolfs" target= "_blank"><i class="fa fa-desktop"></i>SINA BLOG</a></li>
+        <li><a href="../blog/" target="_blank"><i class="fa fa-asterisk"></i>Github BLOG</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="quit"><a href="../"><i class="fa fa-arrow-left"></i></a></div>
+      <div class="desc">说明：使用SVG的图像绘制功能制作钟表的各项部件，并利用CSS3的transform中平移、旋转功能实现表针的走动。</div>
+      <div class="content">
+        <svg id="clock" viewBox="0 0 100 100">
+          <circle id="face" cx="50" cy="50" r="45"/>
+          <g class="dial">
+            <line xmlns:xlink="http://www.w3.org/1999/xlink" xlink:x1="50" xlink:y1="50" xlink:x2="50" xlink:y2="60" transform="rotate(0 50 50)"></line>
+          </g>
+          <g class="hands">
+            <line id="hour" x1="50" y1="55" x2="50" y2="24" />
+            <line id="min" x1="50" y1="58" x2="50" y2="16" />
+            <line id="sec" x1="50" y1="60" x2="50" y2="8" />
+            <circle class="middle" cx="50" cy="50" r="2"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../public.js"></script>
+<script src="../js/SVGClock.js"></script>
+</html>

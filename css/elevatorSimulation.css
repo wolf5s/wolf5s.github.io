@@ -1,0 +1,183 @@
+#main .content {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 600px;
+  height: 600px;
+  border: 1px solid #000; }
+#main .window {
+  float: left;
+  width: 300px;
+  height: 600px;
+  background-color: rgba(85, 102, 119, 0.3); }
+#main .control {
+  float: right;
+  width: 300px;
+  height: 600px; }
+#main .inside {
+  width: 280px;
+  height: 180px;
+  padding: 10px;
+  background-color: rgba(17, 34, 119, 0.3); }
+  #main .inside .desc {
+    display: inline-block;
+    margin: 4px; }
+  #main .inside span {
+    display: inline-block;
+    margin: 5px;
+    width: 32px;
+    height: 32px;
+    border: 4px solid #aaa;
+    border-radius: 8px;
+    line-height: 32px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #555;
+    cursor: pointer; }
+    #main .inside span.open {
+      color: green; }
+    #main .inside span.close {
+      color: red; }
+    #main .inside span.hover {
+      border-color: #f90; }
+    #main .inside span.inchoose {
+      border-color: #f60; }
+    #main .inside span.choose {
+      border-color: #123; }
+    #main .inside span.open {
+      display: inline-block;
+      margin: 5px;
+      width: 32px;
+      height: 32px;
+      border: 4px solid #aaa;
+      border-radius: 8px;
+      line-height: 32px;
+      font-size: 20px;
+      color: green;
+      text-align: center;
+      background-color: #555;
+      cursor: pointer; }
+      #main .inside span.open.open {
+        color: green; }
+      #main .inside span.open.close {
+        color: red; }
+      #main .inside span.open.hover {
+        border-color: #f90; }
+      #main .inside span.open.inchoose {
+        border-color: #f60; }
+      #main .inside span.open.choose {
+        border-color: #123; }
+    #main .inside span.close {
+      display: inline-block;
+      margin: 5px;
+      width: 32px;
+      height: 32px;
+      border: 4px solid #aaa;
+      border-radius: 8px;
+      line-height: 32px;
+      font-size: 20px;
+      color: red;
+      text-align: center;
+      background-color: #555;
+      cursor: pointer; }
+      #main .inside span.close.open {
+        color: green; }
+      #main .inside span.close.close {
+        color: red; }
+      #main .inside span.close.hover {
+        border-color: #f90; }
+      #main .inside span.close.inchoose {
+        border-color: #f60; }
+      #main .inside span.close.choose {
+        border-color: #123; }
+#main .outside {
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  height: 180px;
+  padding: 10px;
+  background-color: rgba(85, 102, 187, 0.3); }
+  #main .outside .desc {
+    position: absolute;
+    margin: 4px;
+    bottom: 0;
+    right: 0; }
+  #main .outside .floor {
+    width: 70%;
+    float: left; }
+    #main .outside .floor span {
+      display: inline-block;
+      margin: 2px 3px;
+      width: 62px;
+      height: 32px;
+      border: 4px solid #aaa;
+      border-radius: 8px;
+      line-height: 32px;
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      background-color: #555;
+      cursor: pointer; }
+      #main .outside .floor span.open {
+        color: green; }
+      #main .outside .floor span.close {
+        color: red; }
+      #main .outside .floor span.hover {
+        border-color: #f90; }
+      #main .outside .floor span.inchoose {
+        border-color: #f60; }
+      #main .outside .floor span.choose {
+        border-color: #123; }
+  #main .outside .upAndDown {
+    float: right;
+    width: 60px;
+    text-align: center;
+    background-color: rgba(17, 34, 119, 0.3); }
+    #main .outside .upAndDown span {
+      display: block;
+      display: inline-block;
+      margin: 5px;
+      width: 32px;
+      height: 32px;
+      border: 4px solid #aaa;
+      border-radius: 8px;
+      line-height: 32px;
+      font-size: 32px;
+      color: #fff;
+      text-align: center;
+      background-color: #555;
+      cursor: pointer; }
+      #main .outside .upAndDown span.open {
+        color: green; }
+      #main .outside .upAndDown span.close {
+        color: red; }
+      #main .outside .upAndDown span.hover {
+        border-color: #f90; }
+      #main .outside .upAndDown span.inchoose {
+        border-color: #f60; }
+      #main .outside .upAndDown span.choose {
+        border-color: #123; }
+#main .dataShow {
+  width: 280px;
+  height: 180px;
+  padding: 10px;
+  background-color: rgba(17, 34, 119, 0.3); }
+  #main .dataShow p {
+    padding-bottom: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    text-indent: 24px; }
+
+@media only screen and (max-width: 460px) {
+  #main .right {
+    height: 420px; }
+    #main .right .content {
+      transform: scale(0.55, 0.55) translate(-40%, -40%); } }
+@media only screen and (max-width: 360px) {
+  #main .right {
+    height: 360px; }
+    #main .right .content {
+      transform: scale(0.45, 0.45) translate(-60%, -60%); } }
+
+/*# sourceMappingURL=elevatorSimulation.css.map */

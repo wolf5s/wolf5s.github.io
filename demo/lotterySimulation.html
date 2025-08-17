@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>彩票模拟选号</title>
+  <link rel="stylesheet" type="text/css" href="../public.css" />
+  <link rel="stylesheet" type="text/css" href="../publicDemo.css" />
+  <link rel="stylesheet" type="text/css" href="../css/lotterySimulation.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" />
+</head>
+<body>
+  <div id="main">
+    <div class="left">
+      <div class="avatar">
+        <div class="image-border"></div>
+        <div class="image"></div>
+      </div>
+      <ul class="own">
+        <li><a href="digitaClock.html">canvas数码时钟</a></li>
+        <li><a href="rotateCube.html">CSS3旋转方块</a></li>
+        <li><a href="flappyBird.html">flappyBird</a></li>
+        <li><a href="gobang.html">五子棋</a></li>
+        <li><a href="tetris.html">俄罗斯方块</a></li>
+        <li><a href="canvasClock.html">canvas钟表</a></li>
+        <li><a href="retroSnaker.html">贪吃蛇</a></li>
+        <li><a href="mineSweeper.html">扫雷</a></li>
+        <li><a href="linkUp.html">数字连连看</a></li>
+        <li><a href="2048.html">2048</a></li>
+        <li><a href="elevatorSimulation.html">模拟电梯运行</a></li>
+        <li><a href="SVGClock.html">SVG钟表</a></li>
+        <li><a href="colorCard.html">色卡</a></li>
+        <li class="choose"><a href="#">彩票模拟选号</a></li>
+        <li><a href="perpetualCalendar.html">万年历</a></li>
+        <li><a href="pictureClipping.html">图片剪裁与缩略图</a></li>
+      </ul>
+      <ul class="link">
+        <li><a href="http://blog.sina.com.cn/5wolfs" target= "_blank"><i class="fa fa-desktop"></i>SINA BLOG</a></li>
+        <li><a href="../blog/" target="_blank"><i class="fa fa-asterisk"></i>Github BLOG</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="quit"><a href="../"><i class="fa fa-arrow-left"></i></a></div>
+      <div class="desc">说明：使用随机数功能实现号码生成，并过滤重复数字。利用setTimeout实现球的依次出现。</div>
+      <div class="content">
+        <span class="title">彩票模拟选号系统</span>
+        <div class="describe">
+          <span>基本号码数量：<input id="basic" type="text" value="6" size="1" />&nbsp;&nbsp;(10或更小的大于0的整数)</span>
+          <span>特别号码数量：<input id="special" type="text" value="1" size="1" />&nbsp;&nbsp;(0或1)</span>
+          <span>号码最大数字：<input id="max" type="text" value="35" size="1" />&nbsp;&nbsp;(不大于100的整数)</span>
+          <span>PS:默认最小数字为1,最大数字大于等于号码总数,且特别号码与基本号码不重复</span>
+          <div class="button">
+            <button id="generate">生成</button>&nbsp;&nbsp;
+            <button id="reset">清空列表</button>
+          </div>
+        </div>
+        <div class="list"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../public.js"></script>
+<script src="../js/lotterySimulation.js"></script>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Studying</title>
+  <link href="base.css" rel="stylesheet" type="text/css" />
+  <link href="blog.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <div id="head">
+      <div id="head-content">
+        <div id="portrait" class="head-content"><a href="#">DoubleStone</div>
+        <div id="head-right" class="head-content">
+          <a href="https://github.com/fifthwolf" target="_blank"><span id="github"></span>我的GitHub</a>
+        </div>
+      </div>
+      <div id="head-subject"><p>DoubleStone is Studying...</p>
+        <p>&nbsp;&nbsp;I don't know what I want to say...</p>
+      </div>
+    </div>
+  </header>
+  <div id="content">
+    <div class="content">
+      <div class="content-left">
+        <div class="content-day">23</div>
+        <div class="content-ym">2018-02</div>
+      </div>
+      <div class="content-right">
+        <div class="content-title">防盗链问题</div>
+        <div class="content-abstract">
+          <p>在本地页面里用img标签访问页面图片返回403 forbidden，而浏览器可以直接打开。因为服务器加了防盗链，会检测访问图片的referer。所以解决方案：在html中加&lt;meta name="referrer" content="no-referrer" /&gt;头即可解决。</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-left">
+        <div class="content-day">24</div>
+        <div class="content-ym">2017-09</div>
+      </div>
+      <div class="content-right">
+        <div class="content-title">穿透层鼠标事件</div>
+        <div class="content-abstract">
+          <p>若使用了SVG或其他元素遮挡住了当前有触发事件的元素，则原元素的事件无法触发。此时就需要将前面那层元素进行传统处理。设置CSS3属性pointer-events: none;(默认为auto)，可达到此效果。</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-left">
+        <div class="content-day">14</div>
+        <div class="content-ym">2017-09</div>
+      </div>
+      <div class="content-right">
+        <div class="content-title">延迟加载图片</div>
+        <div class="content-abstract">
+          <p>CSS中background的图像若不加载完毕，则后面的CSS样式会被阻塞，无法加载，在网络条件差的情况下极其影响体验。所以将background的图像地址设为一个仅有1像素的空白图片，再设置JS的window.onload，更改图像地址，即可实现CSS快速加载后再替换图片。同理在img中可将src的地址设置为读取图像，另自定义一个属性设置为图片的真实地址，在JS中进行更改即可。</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-left">
+        <div class="content-day">02</div>
+        <div class="content-ym">2017-09</div>
+      </div>
+      <div class="content-right">
+        <div class="content-title">盒子内加overflow-y:scroll后字体会变大</div>
+        <div class="content-abstract">
+          <p>盒子本身设置了max-height，然后里面内容超出盒子高度则出现滚动条，但是出现滚动条的时候，盒子内字号全部变大，找出问题在CSS的scroll上，但不知道怎么解决。然后搜索到了一个方法，在CSS内加入body *{ max-height: 999999px; } ，然后问题居然解决了！但还是不知道这其中的原因</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-left">
+        <div class="content-day">31</div>
+        <div class="content-ym">2017-08</div>
+      </div>
+      <div class="content-right">
+        <div class="content-title">监听事件在移动端失效</div>
+        <div class="content-abstract">
+          <p>通过二分注释排除法发现最终问题出现在一行代码上：`10px ${marginRight}px 30px`;的写法直接导致手机端失效，即使其为一个未被调用的函数，改成 '10px ' + marginRight + 'px 30px';解决问题</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-left">
+        <div class="content-day">20</div>
+        <div class="content-ym">2017-07</div>
+      </div>
+      <div class="content-right">
+        <div class="content-title">安装node-sass</div>
+        <div class="content-abstract">
+          <p>解决报错方法：使用cnpm来安装node-sass</p>
+          <p>$ npm install --save-dev sass-loader</p>
+          <p>$ npm install cnpm -g --registry=https://registry.npm.taobao.org</p>
+          <p>$ cnpm install node-sass --registry=https://registry.npm.taobao.org</p>
+          <p>$ npm install gulp-sass --save-dev</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-left">
+        <div class="content-day">07</div>
+        <div class="content-ym">2017-04</div>
+      </div>
+      <a href="content/20170407.html"><div class="content-right">
+        <div class="content-title">图片放大</div>
+        <div class="content-abstract"><img src="http://img.mukewang.com/537d77fb0001559d04000255.jpg" style="height:100%"/></div>
+      </div></a>
+    </div>
+    <div class="content">
+      <div class="content-left">
+        <div class="content-day">27</div>
+        <div class="content-ym">2017-03</div>
+      </div>
+      <a href="content/20170327.html"><div class="content-right">
+        <div class="content-title">一道追击问题</div>
+        <div class="content-abstract">一道小学奥数题，具体题目忘了</div>
+      </div></a>
+    </div>
+  </div>
+  <footer>
+    <div>Learning from 22 Dec,2016</div>
+  </footer>
+</body>
+</html>

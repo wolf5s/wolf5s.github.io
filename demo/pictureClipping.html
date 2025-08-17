@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>图片剪裁与缩略图</title>
+  <link rel="stylesheet" type="text/css" href="../public.css" />
+  <link rel="stylesheet" type="text/css" href="../publicDemo.css" />
+  <link rel="stylesheet" type="text/css" href="../css/pictureClipping.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.min.css" />
+</head>
+<body>
+  <div id="main">
+    <div class="left">
+      <div class="avatar">
+        <div class="image-border"></div>
+        <div class="image"></div>
+      </div>
+      <ul class="own">
+        <li><a href="digitaClock.html">canvas数码时钟</a></li>
+        <li><a href="rotateCube.html">CSS3旋转方块</a></li>
+        <li><a href="flappyBird.html">flappyBird</a></li>
+        <li><a href="gobang.html">五子棋</a></li>
+        <li><a href="tetris.html">俄罗斯方块</a></li>
+        <li><a href="canvasClock.html">canvas钟表</a></li>
+        <li><a href="retroSnaker.html">贪吃蛇</a></li>
+        <li><a href="mineSweeper.html">扫雷</a></li>
+        <li><a href="linkUp.html">数字连连看</a></li>
+        <li><a href="2048.html">2048</a></li>
+        <li><a href="elevatorSimulation.html">模拟电梯运行</a></li>
+        <li><a href="SVGClock.html">SVG钟表</a></li>
+        <li><a href="colorCard.html">色卡</a></li>
+        <li><a href="lotterySimulation.html">彩票模拟选号</a></li>
+        <li><a href="perpetualCalendar.html">万年历</a></li>
+        <li class="choose"><a href="#">图片剪裁与缩略图</a></li>
+      </ul>
+      <ul class="link">
+        <li><a href="http://blog.sina.com.cn/5wolfs" target= "_blank"><i class="fa fa-desktop"></i>SINA BLOG</a></li>
+        <li><a href="../blog/" target="_blank"><i class="fa fa-asterisk"></i>Github BLOG</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="quit"><a href="../"><i class="fa fa-arrow-left"></i></a></div>
+      <div class="desc">说明：拖动8个控制点改变选择区域大小，或者移动选择区域，下方预览图即根据选择区域而改变。<br />PS：移动端无效。</div>
+      <div class="content">
+        <div class="box">
+          <img src="../image/pictureClipping.png" class="img1" />
+          <img src="../image/pictureClipping.png" class="img2" />
+          <div class="control">
+            <div class="minDiv left-up"></div>
+            <div class="minDiv up"></div>
+            <div class="minDiv right-up"></div>
+            <div class="minDiv right2"></div>
+            <div class="minDiv right-down"></div>
+            <div class="minDiv down"></div>
+            <div class="minDiv left-down"></div>
+            <div class="minDiv left"></div>
+          </div>
+        </div>
+        <div id="show">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../public.js"></script>
+<script src="../js/pictureClipping.js"></script>
+</html>

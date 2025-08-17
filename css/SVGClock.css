@@ -1,0 +1,42 @@
+.content {
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+  height: 600px; }
+  @media only screen and (max-width: 600px) {
+    .content {
+      width: 100%;
+      height: 100%; } }
+
+#face {
+  stroke-width: 2;
+  stroke: rgba(255, 255, 255, 0.8);
+  fill: rgba(85, 102, 119, 0.8); }
+
+.dial line {
+  stroke-width: 1;
+  stroke: #ccc; }
+.dial text {
+  font-size: 5px;
+  fill: #fff; }
+.dial circle {
+  fill: #ccc; }
+
+#hour {
+  stroke-width: 2;
+  stroke: #444; }
+
+#min {
+  stroke-width: 1.5;
+  stroke: #666; }
+
+#sec {
+  stroke-width: 1;
+  stroke: #fff; }
+
+.middle {
+  stroke-width: 2;
+  stroke: #345;
+  fill: #567; }
+
+/*# sourceMappingURL=SVGClock.css.map */

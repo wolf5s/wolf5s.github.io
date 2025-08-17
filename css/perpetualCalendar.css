@@ -1,0 +1,72 @@
+.content {
+  position: relative;
+  margin: 0 auto;
+  width: 530px;
+  height: 415px;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 34, 51, 0.8)), to(rgba(85, 102, 119, 0.8)));
+  background: linear-gradient(rgba(17, 34, 51, 0.8), rgba(85, 102, 119, 0.8));
+  color: #fff; }
+  @media only screen and (max-width: 600px) {
+    .content {
+      width: 100%;
+      height: 330px; } }
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 20px; }
+  @media only screen and (max-width: 600px) {
+    .header {
+      top: 20px;
+      left: 20px;
+      font-size: 16px; }
+      .header select {
+        width: 60px;
+        height: 24px;
+        font-size: 16px; }
+        .header select:last-child {
+          width: 40px; } }
+
+.calendar {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  border-collapse: collapse; }
+  .calendar th, .calendar td {
+    width: 69px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 16px; }
+  .calendar th {
+    height: 34px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000;
+    cursor: default; }
+    .calendar th:first-child, .calendar th:last-child {
+      color: #e02d2d; }
+  .calendar td {
+    position: relative;
+    height: 49px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer; }
+    .calendar td:first-child, .calendar td:last-child {
+      color: #e02d2d; }
+    .calendar td.choose {
+      background-color: rgba(85, 102, 119, 0.8);
+      color: #fff; }
+  @media only screen and (max-width: 600px) {
+    .calendar {
+      top: 80px;
+      left: 20px;
+      width: 85%; }
+      .calendar th, .calendar td {
+        font-size: 12px; }
+      .calendar th {
+        height: 40px; }
+      .calendar td {
+        height: 40px; } }
+
+/*# sourceMappingURL=perpetualCalendar.css.map */

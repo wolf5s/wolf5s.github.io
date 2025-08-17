@@ -1,0 +1,187 @@
+.showView {
+  margin: -10px auto 20px;
+  width: 620px;
+  height: 60px;
+  border: 1px solid #ccc;
+  text-align: center; }
+  .showView div {
+    display: inline-block;
+    line-height: 60px;
+    color: #fff; }
+  .showView .score, .showView .time {
+    width: 120px;
+    height: 60px;
+    border: 2px solid #ccc;
+    background-color: rgba(17, 34, 51, 0.8);
+    font-size: 48px; }
+  .showView .score {
+    float: left; }
+  .showView .pause {
+    display: none;
+    width: 180px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 30px;
+    background-color: #567;
+    cursor: pointer; }
+  .showView .time {
+    float: right; }
+
+.mainView {
+  position: relative;
+  margin: 0 auto;
+  padding: 10px;
+  width: 600px;
+  height: 400px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer; }
+  .mainView .box {
+    width: 600px;
+    height: 400px;
+    background-color: rgba(17, 34, 51, 0.3); }
+    .mainView .box div {
+      width: 600px;
+      height: 20px; }
+      .mainView .box div span {
+        display: inline-block;
+        width: 20px;
+        height: 20px; }
+        .mainView .box div span.head {
+          width: 0;
+          height: 0; }
+        .mainView .box div span.head1 {
+          border-right: 10px solid transparent;
+          border-bottom: 20px solid #f80;
+          border-left: 10px solid transparent; }
+        .mainView .box div span.head2 {
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-left: 20px solid #f80; }
+        .mainView .box div span.head3 {
+          border-top: 20px solid #f80;
+          border-right: 10px solid transparent;
+          border-left: 10px solid transparent; }
+        .mainView .box div span.head4 {
+          border-top: 10px solid transparent;
+          border-right: 20px solid #f80;
+          border-bottom: 10px solid transparent; }
+        .mainView .box div span.body {
+          background-color: #f80; }
+        .mainView .box div span.eatPoint {
+          background-color: #f00; }
+  .mainView .cellMask {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(85, 102, 119, 0.7);
+    text-align: center; }
+  .mainView .starButton {
+    margin: 160px auto 0;
+    width: 180px;
+    height: 80px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    font-size: 32px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 3px 5px #000;
+    background-color: rgba(17, 34, 51, 0.5);
+    cursor: pointer; }
+  .mainView .final {
+    display: none;
+    margin-top: 20px;
+    font-size: 36px;
+    line-height: 60px;
+    color: #fff; }
+
+#mobileControl {
+  display: none; }
+
+@media only screen and (max-width: 600px) {
+  .showView {
+    margin: 20px auto 20px;
+    width: 248px;
+    height: 24px; }
+    .showView div {
+      line-height: 24px; }
+    .showView .score, .showView .time {
+      font-size: 24px;
+      width: 48px;
+      height: 24px; }
+    .showView .pause {
+      font-size: 18px;
+      width: 72px;
+      height: 24px; }
+
+  .mainView {
+    margin-bottom: 130px;
+    width: 240px;
+    height: 160px; }
+    .mainView .box {
+      width: 240px;
+      height: 160px; }
+      .mainView .box div {
+        width: 240px;
+        height: 8px; }
+        .mainView .box div span {
+          vertical-align: top;
+          width: 8px;
+          height: 8px; }
+          .mainView .box div span.head1 {
+            border-right: 4px solid transparent;
+            border-bottom: 8px solid #f80;
+            border-left: 4px solid transparent; }
+          .mainView .box div span.head2 {
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 8px solid #f80; }
+          .mainView .box div span.head3 {
+            border-top: 8px solid #f80;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent; }
+          .mainView .box div span.head4 {
+            border-top: 4px solid transparent;
+            border-right: 8px solid #f80;
+            border-bottom: 4px solid transparent; }
+    .mainView .cellMask {
+      width: 240px;
+      height: 160px; }
+    .mainView .starButton {
+      margin: 48px auto 0;
+      width: 80px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px; }
+    .mainView .final {
+      margin-top: 8px;
+      line-height: 24px;
+      font-size: 16px; }
+
+  #mobileControl {
+    display: block;
+    position: fixed;
+    left: 20px;
+    bottom: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: rgba(17, 34, 51, 0.5); }
+
+  #mobileButton {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: rgba(17, 34, 51, 0.8); } }
+
+/*# sourceMappingURL=retroSnaker.css.map */

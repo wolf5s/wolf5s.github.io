@@ -1,0 +1,42 @@
+.content {
+  position: relative;
+  text-align: center;
+  height: 600px; }
+  .content canvas {
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    height: 600px; }
+  @media only screen and (max-width: 420px) {
+    .content {
+      height: 420px; }
+      .content canvas {
+        margin-left: -140px;
+        width: 280px;
+        height: 420px; } }
+  @media only screen and (max-width: 340px) {
+    .content {
+      height: 330px; }
+      .content canvas {
+        margin-left: -110px;
+        width: 220px;
+        height: 330px; } }
+
+#canvasBackground {
+  z-index: 1; }
+
+#canvasObstacle {
+  z-index: 2; }
+
+#canvasBird {
+  z-index: 3; }
+
+#canvasButton {
+  z-index: 4; }
+
+#canvasMask {
+  z-index: 5;
+  pointer-events: none; }
+
+/*# sourceMappingURL=flappyBird.css.map */

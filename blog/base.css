@@ -1,0 +1,92 @@
+*{
+  margin:0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "微软雅黑";
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+body{
+  background: #ccc url(../image/background.jpg) no-repeat fixed center;
+  background-size: 100%;
+}
+
+#head{
+  width: 100%;
+  background: url(image/header/header.png) repeat-x;
+}
+
+#head a:hover{
+  color: #00f;
+}
+
+#head-content{
+  margin:0 auto;
+  height: 40px;
+  width: 1000px;
+}
+
+header .head-content{
+  margin-top: 2px;
+  line-height: 35px;
+}
+
+#portrait{
+  float: left;
+  margin-left: 50px;
+  text-indent: 45px;
+  background: url(image/header/portrait.png) no-repeat;
+}
+
+#github{
+  float: left;
+  margin-right: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: url(image/header/github.jpg) no-repeat;
+}
+
+#head-right{
+  float: right;
+  margin-right: 50px;
+}
+
+#head-subject{
+  margin:40px auto;
+  width: 1000px;
+  text-indent: 150px;
+}
+
+#head-subject p:first-child{
+  font-size: 26px;
+  color: #fff;
+  text-shadow: 3px 3px 5px #ccc; 
+  margin-bottom: 20px;
+}
+
+#head-subject p{
+  color: #fff;
+}
+
+#content{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255,255,255,0.3);
+}
+
+footer div{
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+}

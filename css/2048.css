@@ -1,0 +1,230 @@
+.content {
+  text-align: center; }
+  .content button {
+    margin-top: 10px;
+    width: 60px;
+    height: 30px; }
+
+.option {
+  margin-top: 16px;
+  font-size: 16px; }
+  .option input {
+    font-size: 16px;
+    line-height: 16px; }
+
+.score {
+  margin-bottom: 10px;
+  font-size: 20px; }
+
+.mainView {
+  position: relative; }
+
+.cell {
+  margin: 0 auto;
+  padding: 5px;
+  min-height: 200px;
+  border-radius: 12px;
+  background-color: #baaea0; }
+  .cell div {
+    font-size: 0;
+    margin: 0; }
+    .cell div span {
+      display: inline-block;
+      margin: 5px;
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      font-size: 28px;
+      line-height: 50px;
+      vertical-align: top;
+      color: #fff;
+      background-color: #ccc0b2; }
+      .cell div span.type1 {
+        background-color: #e9e4c4; }
+      .cell div span.type2 {
+        background-color: #f0b66c; }
+      .cell div span.type3 {
+        background-color: #f6954e; }
+      .cell div span.type4 {
+        background-color: #f77d4c; }
+      .cell div span.type5 {
+        background-color: #f85303; }
+      .cell div span.type6 {
+        background-color: #e9dd63; }
+      .cell div span.type7 {
+        background-color: #e9dc4f; }
+      .cell div span.type8 {
+        background-color: #e6da36; }
+      .cell div span.type9 {
+        background-color: #f0e10d; }
+      .cell div span.type10 {
+        font-size: 18px;
+        background-color: #b4ee03; }
+      .cell div span.type11 {
+        font-size: 18px;
+        background-color: #93ee03; }
+      .cell div span.type12 {
+        font-size: 18px;
+        background-color: #5bee03; }
+      .cell div span.type13 {
+        font-size: 18px;
+        background-color: #08ee03; }
+      .cell div span.type14 {
+        font-size: 14px;
+        background-color: #025d00; }
+      .cell div span.type15 {
+        font-size: 14px;
+        background-color: #031374; }
+
+.moblieControl {
+  display: none; }
+
+.cellMask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 5px;
+  border-radius: 12px;
+  background-color: rgba(17, 34, 51, 0.5); }
+  .cellMask p {
+    margin: 10px;
+    color: #fff;
+    font-size: 32px; }
+    .cellMask p:first-child {
+      margin-top: 40px; }
+  .cellMask .restart {
+    margin: 0 auto;
+    width: 100px;
+    height: 40px;
+    background-color: #f6954e;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 3px 5px #123;
+    box-shadow: 0px 3px 5px #123;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+    cursor: pointer; }
+
+@media only screen and (max-width: 800px) {
+  .content button {
+    margin-top: 15px;
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 20px; }
+
+  .score {
+    margin-bottom: 50px;
+    font-size: 20px; }
+
+  .cell {
+    border-radius: 12px; }
+    .cell div span {
+      margin: 5px;
+      width: 40px;
+      height: 40px;
+      border-radius: 7px;
+      font-size: 28px;
+      line-height: 40px; }
+      .cell div span.type7 {
+        font-size: 20px; }
+      .cell div span.type8 {
+        font-size: 20px; }
+      .cell div span.type9 {
+        font-size: 20px; }
+      .cell div span.type10 {
+        font-size: 16px; }
+      .cell div span.type11 {
+        font-size: 16px; }
+      .cell div span.type12 {
+        font-size: 16px; }
+      .cell div span.type13 {
+        font-size: 16px; }
+      .cell div span.type14 {
+        font-size: 10px; }
+      .cell div span.type15 {
+        font-size: 10px; }
+    .cell.long div span {
+      margin: 3.75px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px; }
+
+  .moblieControl {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 5px; }
+    .moblieControl .triangle {
+      position: absolute;
+      width: 0;
+      height: 0; }
+    .moblieControl .controlLeft {
+      top: 50%;
+      margin-top: -50px;
+      left: -55px;
+      border-top: 50px solid transparent;
+      border-right: 25px solid #567;
+      border-bottom: 50px solid transparent;
+      border-left: 25px solid transparent; }
+      .moblieControl .controlLeft.hover {
+        border-right: 25px solid #234; }
+    .moblieControl .controlRight {
+      top: 50%;
+      margin-top: -50px;
+      right: -55px;
+      border-top: 50px solid transparent;
+      border-left: 25px solid #567;
+      border-bottom: 50px solid transparent;
+      border-right: 25px solid transparent; }
+      .moblieControl .controlRight.hover {
+        border-left: 25px solid #234; }
+    .moblieControl .controlTop {
+      top: -55px;
+      left: 50%;
+      margin-left: -50px;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 25px solid #567;
+      border-top: 25px solid transparent; }
+      .moblieControl .controlTop.hover {
+        border-bottom: 25px solid #234; }
+    .moblieControl .controlBottom {
+      bottom: -55px;
+      left: 50%;
+      margin-left: -50px;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 25px solid #567;
+      border-bottom: 25px solid transparent; }
+      .moblieControl .controlBottom.hover {
+        border-top: 25px solid #234; }
+
+  .cellMask {
+    border-radius: 12px; }
+    .cellMask p {
+      margin: 10px;
+      font-size: 32px; }
+      .cellMask p:first-child {
+        margin-top: 40px; }
+    .cellMask .restart {
+      margin: 0 auto;
+      width: 100px;
+      height: 40px;
+      border-radius: 20px;
+      -webkit-box-shadow: 0px 3px 5px #123;
+      box-shadow: 0px 3px 5px #123;
+      font-size: 20px;
+      line-height: 40px; }
+
+  .option {
+    margin-top: 50px;
+    font-size: 18px; }
+    .option input {
+      font-size: 18px;
+      line-height: 18px; } }
+
+/*# sourceMappingURL=2048.css.map */

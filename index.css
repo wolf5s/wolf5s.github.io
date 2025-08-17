@@ -1,0 +1,525 @@
+#start {
+  position: relative;
+  margin: 135px auto 0;
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 0 6px #bbb; }
+  #start.rotate-none {
+    -webkit-animation: rotate-none .5s linear;
+    animation: rotate-none .5s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+@-webkit-keyframes rotate-none {
+  from {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  to {
+    display: none;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg); } }
+@keyframes rotate-none {
+  from {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  to {
+    display: none;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg); } }
+  @media only screen and (max-width: 800px) {
+    #start {
+      position: absolute;
+      margin-top: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0; } }
+  @media only screen and (max-width: 800px) {
+    #start {
+      box-shadow: 0 0 0 #bbb; } }
+  #start .head {
+    position: relative;
+    width: 100%;
+    height: 65%;
+    border-radius: 20px 20px 0 0;
+    background-color: #63b;
+    background: linear-gradient(#123, #567);
+    text-align: center; }
+    @media only screen and (max-width: 800px) {
+      #start .head {
+        border-radius: 40px 40px 0 0;
+        height: 65%; } }
+    #start .head .content {
+      position: absolute;
+      width: 300px;
+      left: 50%;
+      margin-left: -150px;
+      top: 60px; }
+      #start .head .content .avatar {
+        position: relative;
+        margin: 0 auto 20px;
+        width: 120px;
+        height: 120px; }
+        @media only screen and (max-width: 800px) {
+          #start .head .content .avatar {
+            margin: 0 auto 40px; } }
+        #start .head .content .avatar .image-border {
+          position: absolute;
+          left: 50%;
+          margin: -5px 0 0 -60px;
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          background-color: #fff; }
+        #start .head .content .avatar .image {
+          position: absolute;
+          left: 50%;
+          margin-left: -55px;
+          width: 110px;
+          height: 110px;
+          border-radius: 50%;
+          background: #fff url("image/empty.png") 0 0 no-repeat;
+          background-size: 100%; }
+      @media only screen and (max-width: 800px) {
+        #start .head .content {
+          width: 100%;
+          left: 0%;
+          margin-left: 0;
+          top: 80px; }
+          #start .head .content .avatar {
+            position: relative;
+            margin: 0 auto 20px;
+            width: 120px;
+            height: 120px; } }
+    @media only screen and (max-width: 800px) and (max-width: 800px) {
+      #start .head .content .avatar {
+        margin: 0 auto 40px; } }
+      @media only screen and (max-width: 800px) {
+            #start .head .content .avatar .image-border {
+              position: absolute;
+              left: 50%;
+              margin: -5px 0 0 -60px;
+              width: 120px;
+              height: 120px;
+              border-radius: 50%;
+              background-color: #fff; }
+            #start .head .content .avatar .image {
+              position: absolute;
+              left: 50%;
+              margin-left: -55px;
+              width: 110px;
+              height: 110px;
+              border-radius: 50%;
+              background: #fff url("image/empty.png") 0 0 no-repeat;
+              background-size: 100%; } }
+      #start .head .content span {
+        font-size: 26px;
+        color: #fff; }
+        @media only screen and (max-width: 800px) {
+          #start .head .content span {
+            font-size: 24px; } }
+      #start .head .content ul {
+        margin-top: 10px; }
+        @media only screen and (max-width: 800px) {
+          #start .head .content ul {
+            margin-top: 10px; } }
+        #start .head .content ul li {
+          display: inline-block;
+          margin: 0 20px 0;
+          cursor: pointer;
+          font-size: 18px;
+          color: #fff; }
+          #start .head .content ul li:after {
+            position: absolute;
+            content: '|';
+            margin-left: 20px; }
+          #start .head .content ul li:nth-child(2):hover::before {
+            position: absolute;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 4px;
+            content: '31788666';
+            background-color: #fff;
+            color: #000;
+            padding: 3px 10px;
+            margin: 26px 0 0 -34px; }
+          #start .head .content ul li:last-child::after {
+            content: ''; }
+          #start .head .content ul li:last-child:hover::before {
+            position: absolute;
+            z-index: 15;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 4px;
+            content: '';
+            background: #fff url(image/WeChatQRCode.jpg) 0 0 no-repeat;
+            background-size: 100%;
+            width: 120px;
+            height: 120px;
+            margin: 24px 0 0 -36px; }
+          @media only screen and (max-width: 800px) {
+            #start .head .content ul li {
+              margin: 0 10px 0;
+              font-size: 18px; }
+              #start .head .content ul li:after {
+                margin-left: 10px; }
+              #start .head .content ul li:nth-child(2):hover::before {
+                border: 2px solid #ccc;
+                border-radius: 20px;
+                margin: 30px 0 0 -50px;
+                padding: 0 16px; }
+              #start .head .content ul li:last-child:hover::before {
+                border: 2px solid #ccc;
+                border-radius: 20px;
+                width: 120px;
+                height: 120px;
+                margin: 30px 0 0 -30px; } }
+
+.go {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  z-index: 10;
+  margin-left: -50px;
+  margin-top: -20px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 3px 3px #666;
+  text-align: center;
+  cursor: pointer; }
+  .go:hover {
+    transition: .4s;
+    margin-left: -75px;
+    margin-top: -30px;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px; }
+    .go:hover span {
+      transition: .4s;
+      font-size: 30px;
+      line-height: 60px; }
+  .go span {
+    top: 5px;
+    color: #63b;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px; }
+  @media only screen and (max-width: 800px) {
+    .go {
+      top: 65%;
+      margin-left: -75px;
+      margin-top: -30px;
+      width: 150px;
+      height: 60px;
+      border-radius: 30px; }
+      .go:hover {
+        margin-left: -75px;
+        margin-top: -30px;
+        width: 150px;
+        height: 60px;
+        border-radius: 30px; }
+        .go:hover span {
+          font-size: 30px;
+          line-height: 60px; }
+      .go span {
+        color: #63b;
+        font-size: 30px;
+        line-height: 60px; } }
+
+.foot {
+  position: relative;
+  width: 100%;
+  height: 35%;
+  border-radius: 0 0 20px 20px;
+  background-color: #fff;
+  color: #bbb;
+  text-align: center; }
+  .foot .title {
+    display: inline-block;
+    margin: 40px 0 20px;
+    font-size: 30px; }
+  .foot .content {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center; }
+  @media only screen and (max-width: 800px) {
+    .foot {
+      height: 35%;
+      border-radius: 0 0 40px 40px; }
+      .foot .title {
+        margin: 40px 0 20px;
+        font-size: 30px; }
+      .foot .content {
+        margin-top: 10px;
+        font-size: 18px; } }
+
+#resume {
+  margin-bottom: 80px; }
+  #resume h2 {
+    font-size: 32px;
+    color: #414141; }
+  #resume h4 {
+    position: relative;
+    margin: 40px 60px 10px;
+    color: #454545; }
+    #resume h4::before {
+      position: absolute;
+      top: 10px;
+      left: -60px;
+      width: 50px;
+      height: 1px;
+      background-color: #000;
+      content: ''; }
+    #resume h4::after {
+      position: absolute;
+      top: 10px;
+      left: 74px;
+      width: 50px;
+      height: 1px;
+      background-color: #000;
+      content: ''; }
+  #resume p {
+    margin-bottom: 10px; }
+    #resume p, #resume p span {
+      padding-right: 25px;
+      line-height: 24px;
+      color: #656464; }
+    #resume p span {
+      display: inline-block; }
+  #resume span {
+    display: inline-block;
+    padding-right: 50px;
+    line-height: 24px;
+    color: #656464; }
+
+#demo {
+  margin-bottom: 80px; }
+  #demo h2 {
+    font-size: 32px;
+    color: #414141; }
+  #demo ul {
+    margin: 40px 0 10px; }
+
+.demo-item {
+  position: relative;
+  display: inline-block;
+  margin: 10px 10px 30px;
+  width: 240px;
+  height: 210px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  -webkit-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+  .demo-item a, .demo-item img, .demo-item h4, .demo-item span {
+    position: absolute; }
+  .demo-item a {
+    width: 100%;
+    height: 100%; }
+  .demo-item img {
+    left: 10px;
+    top: 10px;
+    width: 220px;
+    height: 120px;
+    border-radius: 4px; }
+  .demo-item h4 {
+    top: 140px;
+    left: 10px;
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #000; }
+  .demo-item span {
+    display: -webkit-box;
+    display: -moz-box;
+    top: 165px;
+    left: 10px;
+    width: 220px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #93999f;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-line-clamp: 2; }
+
+#project {
+  margin-bottom: 80px; }
+  #project h2 {
+    font-size: 32px;
+    color: #414141; }
+  #project h4 {
+    position: relative;
+    margin: 40px 60px 10px;
+    color: #454545; }
+    #project h4::before {
+      position: absolute;
+      top: 10px;
+      left: -60px;
+      width: 50px;
+      height: 1px;
+      background-color: #000;
+      content: ''; }
+    #project h4::after {
+      position: absolute;
+      top: 10px;
+      left: 114px;
+      width: 50px;
+      height: 1px;
+      background-color: #000;
+      content: ''; }
+
+.project-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 160px; }
+  .project-item a {
+    display: flex;
+    width: 100%;
+    height: 100%; }
+    .project-item a img {
+      border-radius: 5px;
+      flex: 0 0 140px;
+      width: 140px;
+      height: 140px;
+      margin: 10px; }
+    .project-item a .describe {
+      flex: 1 1 auto;
+      margin: 10px; }
+      .project-item a .describe h5 {
+        height: 32px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000; }
+      .project-item a .describe span {
+        color: #444; }
+
+#main {
+  display: none;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg); }
+  @media only screen and (max-width: 800px) {
+    #main .right {
+      overflow: hidden; }
+    #main #resume {
+      margin-bottom: 40px; }
+      #main #resume h2 {
+        font-size: 28px; }
+      #main #resume h4 {
+        margin: 20px 40px 10px 30px;
+        font-size: 20px;
+        color: #454545; }
+        #main #resume h4::before {
+          top: 12px;
+          left: -30px;
+          width: 20px; }
+        #main #resume h4::after {
+          top: 12px;
+          left: 80px;
+          width: 20px; }
+      #main #resume p {
+        margin-bottom: 0; }
+        #main #resume p, #main #resume p span {
+          padding-right: 25px;
+          line-height: 30px;
+          font-size: 16px; }
+      #main #resume span {
+        padding: 0 18px 0 0;
+        line-height: 20px;
+        font-size: 16px; }
+    #main #demo {
+      margin-bottom: 40px; }
+      #main #demo h2 {
+        font-size: 28px;
+        color: #414141; }
+      #main #demo ul {
+        margin: 0 10px 10px; }
+    #main .demo-item {
+      margin: 10px 0 30px;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 89%;
+      border: 1px solid #666; }
+      #main .demo-item img {
+        width: 90%;
+        height: 57.142857%;
+        top: 5%;
+        left: 5%; }
+      #main .demo-item h4 {
+        top: 64%;
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 6px; }
+      #main .demo-item span {
+        top: 74%;
+        width: 90%;
+        left: 5%;
+        font-size: 18px;
+        height: 26%;
+        line-height: 24px;
+        color: #93999f;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+    #main #project {
+      margin-bottom: 0; }
+      #main #project h2 {
+        font-size: 28px; }
+      #main #project h4 {
+        margin: 20px 40px 10px 30px;
+        font-size: 20px;
+        color: #454545; }
+        #main #project h4::before {
+          top: 14px;
+          left: -30px;
+          width: 20px; }
+        #main #project h4::after {
+          top: 14px;
+          left: 144px;
+          width: 20px; }
+      #main #project ul {
+        padding-top: 20px; }
+    #main .project-item {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 90%;
+      margin-bottom: 40px;
+      border: 1px solid #666;
+      overflow: hidden; }
+      #main .project-item a {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        flex-direction: column; }
+        #main .project-item a img {
+          flex: 0 0 120px;
+          width: 90%;
+          margin-top: 3%;
+          margin-left: 5%; }
+        #main .project-item a .describe {
+          flex: 1 1 auto; }
+          #main .project-item a .describe h5 {
+            font-size: 22px;
+            line-height: 24px;
+            margin-bottom: 0px; }
+          #main .project-item a .describe span {
+            top: 65%;
+            width: 100%;
+            left: 5%;
+            font-size: 20px;
+            line-height: 24px;
+            color: #93999f; } }
+
+/*# sourceMappingURL=index.css.map */

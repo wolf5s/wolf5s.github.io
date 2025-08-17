@@ -1,0 +1,281 @@
+.content {
+  margin: 0 auto;
+  width: 540px; }
+
+.mainView {
+  float: left;
+  position: relative; }
+
+.box {
+  padding: 10px;
+  width: 300px;
+  height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3); }
+  .box div {
+    width: 300px;
+    height: 30px;
+    background-color: rgba(17, 34, 51, 0.3); }
+    .box div span {
+      display: inline-block;
+      vertical-align: top;
+      width: 30px;
+      height: 30px; }
+      .box div span.typed {
+        width: 22px;
+        height: 22px;
+        border: 4px solid #fff;
+        border-right-color: #808080;
+        border-bottom-color: #808080; }
+      .box div span.type1 {
+        background-color: #00f000; }
+      .box div span.type2 {
+        background-color: #d80000; }
+      .box div span.type3 {
+        background-color: #ed9e00; }
+      .box div span.type4 {
+        background-color: #0000f0; }
+      .box div span.type5 {
+        background-color: #00f0f0; }
+      .box div span.type6 {
+        background-color: #efef00; }
+      .box div span.type7 {
+        background-color: #a000f0; }
+      .box div span.level1 {
+        background-color: #00f000; }
+      .box div span.level2 {
+        background-color: #d80000; }
+      .box div span.level3 {
+        background-color: #ed9e00; }
+      .box div span.level4 {
+        background-color: #0000f0; }
+      .box div span.level5 {
+        background-color: #00f0f0; }
+      .box div span.level6 {
+        background-color: #efef00; }
+      .box div span.level7 {
+        background-color: #a000f0; }
+
+.cellMask {
+  display: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -120px;
+  top: 210px;
+  width: 240px;
+  height: 150px;
+  border-radius: 30px;
+  background-color: rgba(85, 102, 119, 0.7);
+  font-size: 28px;
+  text-align: center;
+  line-height: 75px;
+  color: #fff;
+  text-shadow: 0px 3px 5px #000; }
+
+.showView {
+  float: left;
+  width: 210px;
+  height: 620px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(17, 34, 51, 0.3); }
+  .showView .content {
+    text-align: center;
+    margin: 20px auto;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; }
+  .showView .next {
+    text-align: center; }
+  .showView .start {
+    width: 120px;
+    height: 54px;
+    border-radius: 22.5px;
+    font-size: 24px;
+    line-height: 54px;
+    text-shadow: 1px 2px 2px #000;
+    background-color: #345;
+    -webkit-box-shadow: 1px 2px 2px #000;
+    box-shadow: 1px 2px 2px #000;
+    cursor: pointer; }
+
+.nextBox {
+  padding: 20px;
+  width: 120px;
+  height: 60px; }
+  .nextBox div {
+    width: 120px;
+    height: 30px; }
+    .nextBox div span {
+      display: inline-block;
+      width: 30px;
+      height: 30px; }
+      .nextBox div span.typed {
+        width: 22px;
+        height: 22px;
+        border: 4px solid #fff;
+        border-right-color: #808080;
+        border-bottom-color: #808080; }
+      .nextBox div span.type1 {
+        background-color: #00f000; }
+      .nextBox div span.type2 {
+        background-color: #d80000; }
+      .nextBox div span.type3 {
+        background-color: #ed9e00; }
+      .nextBox div span.type4 {
+        background-color: #0000f0; }
+      .nextBox div span.type5 {
+        background-color: #00f0f0; }
+      .nextBox div span.type6 {
+        background-color: #efef00; }
+      .nextBox div span.type7 {
+        background-color: #a000f0; }
+
+.showViewBox {
+  margin: 20px auto;
+  width: 160px;
+  border-radius: 10px;
+  background-color: rgba(17, 34, 51, 0.3); }
+
+.mobileControl {
+  display: none; }
+
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 285px; }
+
+  .mainView {
+    margin-bottom: 60px; }
+
+  .box {
+    width: 150px;
+    height: 300px; }
+    .box div {
+      width: 150px;
+      height: 15px; }
+      .box div span {
+        width: 15px;
+        height: 15px; }
+        .box div span.typed {
+          width: 11px;
+          height: 11px;
+          border: 2px solid #fff;
+          border-right-color: #808080;
+          border-bottom-color: #808080; }
+        .box div span.type1 {
+          background-color: #00f000; }
+        .box div span.type2 {
+          background-color: #d80000; }
+        .box div span.type3 {
+          background-color: #ed9e00; }
+        .box div span.type4 {
+          background-color: #0000f0; }
+        .box div span.type5 {
+          background-color: #00f0f0; }
+        .box div span.type6 {
+          background-color: #efef00; }
+        .box div span.type7 {
+          background-color: #a000f0; }
+        .box div span.level1 {
+          background-color: #00f000; }
+        .box div span.level2 {
+          background-color: #d80000; }
+        .box div span.level3 {
+          background-color: #ed9e00; }
+        .box div span.level4 {
+          background-color: #0000f0; }
+        .box div span.level5 {
+          background-color: #00f0f0; }
+        .box div span.level6 {
+          background-color: #efef00; }
+        .box div span.level7 {
+          background-color: #a000f0; }
+
+  .cellMask {
+    margin-left: -60px;
+    top: 105px;
+    width: 120px;
+    height: 75px;
+    font-size: 14px;
+    line-height: 37.5px;
+    border-radius: 12px;
+    color: #fff;
+    text-shadow: 0px 3px 5px #000; }
+
+  .showView {
+    width: 105px;
+    height: 320px; }
+    .showView .showViewBox {
+      width: 100px; }
+    .showView .content {
+      margin: 20px auto;
+      line-height: 20px;
+      font-size: 12px; }
+    .showView .nextBox {
+      width: 60px;
+      height: 30px; }
+      .showView .nextBox div {
+        width: 60px;
+        height: 15px; }
+        .showView .nextBox div span {
+          width: 15px;
+          height: 15px; }
+          .showView .nextBox div span.typed {
+            width: 11px;
+            height: 11px;
+            border: 2px solid #fff;
+            border-right-color: #808080;
+            border-bottom-color: #808080; }
+          .showView .nextBox div span.type1 {
+            background-color: #00f000; }
+          .showView .nextBox div span.type2 {
+            background-color: #d80000; }
+          .showView .nextBox div span.type3 {
+            background-color: #ed9e00; }
+          .showView .nextBox div span.type4 {
+            background-color: #0000f0; }
+          .showView .nextBox div span.type5 {
+            background-color: #00f0f0; }
+          .showView .nextBox div span.type6 {
+            background-color: #efef00; }
+          .showView .nextBox div span.type7 {
+            background-color: #a000f0; }
+    .showView .start {
+      width: 60px;
+      height: 27px;
+      border-radius: 11.25px;
+      font-size: 12px;
+      line-height: 27px;
+      text-shadow: 2px 3px 4px #000;
+      -webkit-box-shadow: 2px 3px 3px #000;
+      box-shadow: 2px 3px 3px #000; }
+
+  .mobileControl {
+    display: block; }
+    .mobileControl .mobile {
+      position: fixed;
+      width: 80px;
+      height: 40px;
+      border: 3px solid #123;
+      border-radius: 50%;
+      background-color: #567;
+      bottom: 20px;
+      text-align: center; }
+      .mobileControl .mobile i {
+        display: inline-block;
+        float: left;
+        font-size: 24px;
+        line-height: 40px;
+        color: #fff;
+        width: 40px;
+        height: 40px; }
+        .mobileControl .mobile i.hover {
+          color: #123; }
+    .mobileControl .leftControl {
+      left: 20px; }
+    .mobileControl .rightControl {
+      right: 20px; } }
+
+/*# sourceMappingURL=tetris.css.map */
